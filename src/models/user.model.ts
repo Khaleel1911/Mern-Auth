@@ -11,7 +11,7 @@ export interface IUser {
   twoFactorSecret: string;
   tokenVersion:number,
   resetPasswordToken:string,
-  resetPasswordExpires:Date
+  resetPasswordExpires:Date | null
 
 
 }

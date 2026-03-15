@@ -33,3 +33,11 @@ export function createRefreshToken(
         }
     )
 }
+
+
+export function verifyRefreshToken(token:string){
+   return jwt.verify(token,process.env.JWT_ACCESS_SECRET!) as {
+    sub:string,
+    tokenVersion:number
+   }
+}
