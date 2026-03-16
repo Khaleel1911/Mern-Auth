@@ -7,7 +7,7 @@ import { sendEmail } from "../../lib/email";
 import z, { success } from "zod";
 import { createAccessToken,createRefreshToken, verifyRefreshToken } from "../../lib/token";
 import crypto from 'crypto'
-import { sha256_hex } from "zod/v4/core/regexes.cjs";
+
 
 function getAppUrl(){
     return process.env.APP_URL || `http://localhost:${process.env.PORT}`;

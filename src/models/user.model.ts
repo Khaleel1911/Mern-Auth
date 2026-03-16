@@ -12,7 +12,7 @@ export interface IUser {
   tokenVersion:number,
   resetPasswordToken:string,
   resetPasswordExpires:Date | null
-
+  createdAt?:Date | null
 
 }
 
